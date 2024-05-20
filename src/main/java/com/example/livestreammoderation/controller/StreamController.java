@@ -14,7 +14,7 @@ public class StreamController {
     }
 
     @PostMapping("/start")
-    public String startStream(@RequestParam("moderationType") String moderationType) {
+    public String startStream(@RequestParam String moderationType) {
         return streamService.startStream(moderationType);
     }
 
